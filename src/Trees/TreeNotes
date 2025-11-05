@@ -1,0 +1,41 @@
+## Tree
+* all operations take O(log n)
+* ordered storage
+* cost efficient
+* used in file systems, databases,maths, ML(Decision Tree), algorithms, compression of files and networking
+
+## Properties of a tree
+1. size = no. of nodes
+2. child and parent
+3. siblings
+4. edge
+5. leaf node
+6. height - max no. of edges between two nodes
+7. level = height of root - height of node  (level of root = 0)
+8. ancestor and descendant
+9. degree: no. of children (0,1,2)
+
+## Types of binary tree
+1. Complete binary tree: all level full, last full from left to right
+2. Full/Strict binary tree: each node has either 0 or 2 children (used in compression and segment tree)
+3. Perfect binary tree: all the internal nodes have 2 children and all the leaf nodes are on the same level
+4. Height balanced binary tree: average height is O(log n)
+5. Skewed binary tree: every node has only one child. height = O(n). It is like linked list
+6. Ordered binary tree: every node has some property. Ex: BST
+
+## Useful Properties
+1. Perfect BT: if height = h :- total nodes = 2^(h+1) - 1
+                                total leaf nodes = 2^h
+                                total internal nodes = 2^h - 1
+2. if you have N no. of leaves in a binary tree then levels = log(n + 1) at least
+   if you have N no. of nodes then log(n + 1) min levels.
+3. Strict BT: if N = leaf nodes, then internal nodes = N - 1
+              **[ No. of leaf nodes = No. of internal nodes + 1 ]**
+4. No. of leaf nodes = No. of internal nodes with 2 children + 1;
+
+##Implementation
+1. Linked Representation
+2. Sequential
+
+## Binary Search Tree
+It is a balanced tree.

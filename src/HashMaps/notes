@@ -1,0 +1,30 @@
+HashMaps accesses element in constant time.
+It stores key value pairs.
+Hashmaps are used in compilers and interpreters as well as while creating coding languages to point the names to the variables.
+Network Routers also use Hashmaps.
+Hashmaps use hashcode() to convert keys to numbers and then access those keys using the same number.
+
+
+## Chaining
+    If two elements have the same key than the values are stored in a linked list.
+    Load Factor(alpha) = n/m. (expected key per slot)
+    n = no. of keys in a table
+    m = size of the table
+    Time complexity = O(1 + alpha)
+
+## Division Method
+    h(k) = k % m;  m = prime number (not too close to power of 2 or 10)
+
+## Multiplication Method
+    h(k) = [(a.k) % (2^w)] >> (w-r);
+    a = random number
+    w = no. of bits in k
+    m = 2^r
+    * a is odd and 2^(w-1) < a < 2^w and not too close to 2^(w-1), 2^w
+
+Universal Hashing
+    h(k) = [(ak+b) % p] % m;
+    a & b are random belonging to [0,p-1]
+    probability(h(k1) = h(k2)) = 1/m;
+
+If you want to use a map but also want to keep it in sorted order than use TreeMap.

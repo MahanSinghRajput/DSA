@@ -1,0 +1,22 @@
+String objects are immutable. (once created its data or state can't be changed)
+      String s = "Mahan";
+      s = "Singh"; // yaha change ho jaega but heap mein "Mahan" bhi rahega
+      System.out.println(s);
+
+== operator reference dekhta hai value nhi. (non primitive ke case mein) // string is non primitive in java
+
+## Comparing two strings in JAVA
+   *equals() method compares the original content of the string.
+   *public boolean equals(object another) compare this string to the specified object.
+   *public boolean equalsIgnoreCase(String another) compares the string to another string, ignoring case.
+   *equals() compares values, "==" compares reference not values.
+
+sc.next() - input mein space ke baad ki cheeze nhi leta
+sc.nextLine() - pura input leta hai space ke sath
+
+## JAVA String methods
+   toUpperCase(), toLowerCase(), trim(), startsWith(), endsWith(), equalsIgnoreCase(), charAt(),
+   valueOf(), replace(), contains(), substring(), split(), toCharArray(), isEmpty()
+   Ye saare methods nayi string bana dete hain purani wali wahi rehti hai kyuki string immutable hoti hai.
+
+Everything that starts with a capital letter is a class.

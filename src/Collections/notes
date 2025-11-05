@@ -1,0 +1,199 @@
+List
+List is used when we want to store elements in order as given containing duplicates.
+List interface is implemented by ArrayList, LinkedList, Vector and Stack.
+Here is a summary of key ArrayList methods used in Java, these can be used in linked list too:
+
+add(element): Adds an element at the end of the list.
+add(index, element): Inserts an element at a specified position.
+addAll(collection): Appends all elements of a collection.
+clear(): Removes all elements from the list.
+clone(): Returns a shallow copy of the ArrayList.
+contains(element): Checks if the list contains the specified element.
+get(index): Retrieves the element at a given index.
+indexOf(element): Returns the index of the first occurrence of an element.
+isEmpty(): Returns true if the list contains no elements.
+iterator(): Provides an iterator for the ArrayList.
+lastIndexOf(element): Returns the index of the last occurrence of an element.
+remove(index/element): Removes element by index or by value.
+removeAll(collection): Removes all elements in the specified collection.
+set(index, element): Replaces element at a specific index with the specified element.
+size(): Returns the number of elements in the list.
+sort(comparator): Sorts the list as per comparator.
+subList(fromIndex, toIndex): Returns a view of the list between two indices.
+toArray(): Converts the list to an array.
+trimToSize(): Trims the capacity to current size.
+
+The Java Stack class provides key methods that facilitate last-in-first-out (LIFO) data management, making it
+easy to work with stack-based algorithms.
+Core Stack Class Methods:
+
+push(element): Adds an element at the top of the stack.
+pop(): Removes and returns the top element from the stack; throws an exception if the stack is empty.
+peek(): Returns (but does not remove) the top element of the stack; throws an exception if empty.
+empty(): Checks if the stack is empty and returns a boolean result.
+search(element): Returns the 1-based position of the element from the top; returns -1 if not found.
+
+Since Stack extends Vector, it also inherits these useful methods:
+add(element), add(index, element): Appends or inserts elements.
+clear(): Removes all elements.
+isEmpty(): Checks if the stack is empty.
+get(index): Retrieves the element at a specific position.
+remove(index/element): Removes by index or value.
+
+
+Key Queue Methods in Java
+add(element): Inserts an element at the end of the queue; throws an exception if the queue is full.
+offer(element): Inserts an element at the end; returns false if insertion is not possible.
+remove(): Removes and returns the front element; throws exception if empty.
+poll(): Removes and returns the front element; returns null if the queue is empty.
+element(): Retrieves the front element without removing; throws exception if empty.
+peek(): Retrieves the front element without removing; returns null if empty.
+Additional Useful Methods
+clear(): Removes all elements from the queue.
+contains(object): Checks if the queue contains a specific element.
+size(): Returns the number of elements in the queue.
+isEmpty(): Checks if the queue is empty.
+iterator(): Returns an iterator for traversing elements.
+
+
+ArrayDeque in Java provides a double-ended queue implementation that allows efficient insertions and removals at both ends, supporting numerous queue and stack operations with a rich set of methods.[1][3][5]
+
+### Common ArrayDeque Methods
+
+| Method                   | Description                                                        |
+|--------------------------|--------------------------------------------------------------------|
+| add(e)                   | Inserts element at the end of the deque.
+| addFirst(e)              | Inserts element at the front of the deque.
+| addLast(e)               | Inserts element at the end (same as add).
+| offer(e)                 | Offers element at the end, returns false if not possible.
+| offerFirst(e)            | Offers element at the front.
+| offerLast(e)             | Offers element at the end.
+| remove()                 | Removes and returns the front element.
+| removeFirst()            | Removes and returns the first element.
+| removeLast()             | Removes and returns the last element.
+| poll()                   | Retrieves and removes the head, returns null if empty.
+| pollFirst()              | Retrieves and removes the first element, returns null if empty.
+| pollLast()               | Retrieves and removes the last element, returns null if empty.
+| getFirst()               | Retrieves the first element without removing.
+| getLast()                | Retrieves the last element without removing.
+| peek()                   | Returns the head without removing, or null if empty.
+| peekFirst()              | Returns the first element without removing.
+| peekLast()               | Returns the last element without removing.
+| pop()                    | Pops (removes and returns) the first element (stack operation).
+| push(e)                  | Pushes element onto front (stack operation).
+| clear()                  | Removes all elements.
+| size()                   | Returns number of elements.
+| isEmpty()                | Checks if empty.
+| contains(e)              | Checks if element is present.
+| iterator(), descendingIterator() | Iterates in forward or reverse order.
+| toArray()                | Returns array with all elements.
+| clone()                  | Returns shallow copy.
+
+### Usage Notes
+
+- ArrayDeque prohibits null elements and is not thread-safe.
+- Most operations have amortized constant time performance and it’s faster than `LinkedList` for stack/queue operations.
+- Ideal for both stack (LIFO) and queue (FIFO) use cases.
+
+All of these methods make ArrayDeque a preferred, versatile choice for dynamic, double-ended data manipulation in Java.
+
+
+
+Java HashSet is a collection that stores unique elements without maintaining any specific order.
+It provides various methods to add, remove, and query elements efficiently.
+### Common HashSet Methods
+
+| Method               | Description                                                      |
+|----------------------|------------------------------------------------------------------|
+| add(E e)             | Adds the element to the set if it is not already present. Returns false if duplicate.
+| addAll(Collection c)  | Adds all elements from the specified collection to the set.
+| clear()              | Removes all elements from the set.
+| contains(Object o)   | Checks if the set contains the specified element.
+| isEmpty()            | Returns true if the set contains no elements.
+| iterator()           | Returns an iterator over the elements in the set.
+| remove(Object o)     | Removes the specified element if present; returns whether removal was successful.
+| removeAll(Collection c) | Removes all elements that exist in the specified collection.
+| size()               | Returns the number of elements in the set.
+| clone()              | Returns a shallow copy of the HashSet.
+
+### Important Details
+
+- HashSet internally uses a HashMap for storage and hashing for quick access.
+- Does not allow duplicate elements; duplicates are ignored when adding.
+- Allows null values but is not synchronized; external synchronization is needed for thread safety.
+- Initial capacity defaults to 16 with a load factor of 0.75; it resizes automatically as elements grow.
+- Useful for set operations such as union (via `addAll`), intersection, and difference.
+
+These functions make HashSet a powerful tool for managing a collection of unique items with fast access and modification capabilities in Java.
+
+//set mein randomly store hota hai linkedhashset mein orderly store hota hai, treeset mein sorted hota hai.
+
+
+
+
+
+Java Vector class provides a resizable array of objects with synchronization. Here are key methods of the Vector class in Java:
+
+Adding Elements
+
+add(E e): Adds an element at the end of the vector.
+
+add(int index, E element): Inserts the element at the specified index.
+
+addAll(Collection c): Appends all elements from another collection.
+
+addElement(E e): Adds an element at the end (legacy method).
+
+Accessing Elements
+
+get(int index): Returns the element at the specified index.
+
+elementAt(int index): Returns element at index (legacy).
+
+firstElement(): Returns the first element.
+
+lastElement(): Returns the last element.
+
+Modifying Elements
+
+set(int index, E element): Replaces the element at the specified index.
+
+setElementAt(E element, int index): Legacy method to set element.
+
+Removing Elements
+
+remove(int index): Removes element at the given index.
+
+remove(Object o): Removes the first occurrence of the specified object.
+
+removeAll(Collection<?> c): Removes all elements present in given collection.
+
+removeElement(Object obj): Removes first occurrence of object (legacy).
+
+removeElementAt(int index): Removes element at index (legacy).
+
+removeAllElements(): Removes all elements.
+
+Other Useful Methods
+
+capacity(): Returns the current capacity of the internal array.
+
+size(): Returns the number of elements.
+
+isEmpty(): Checks if vector has no elements.
+
+contains(Object o): Checks if the vector contains the specified object.
+
+indexOf(Object o): Finds the index of first occurrence.
+
+lastIndexOf(Object o): Finds index of last occurrence.
+
+toArray(): Converts vector to array.
+
+clear(): Clears all elements.
+
+trimToSize(): Trims capacity to current size.
+
+clone(): Creates a shallow copy.
+
+iterator(): Returns an iterator over elements.

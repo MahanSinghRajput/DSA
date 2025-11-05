@@ -1,0 +1,9 @@
+Array objects are in heap.
+Heap objects are not continuous.
+Array if not given any values has default values.
+
+datatype[] name = new datatype[size]
+// datatype[] name (name getting defines in stack) [compile time]
+// new datatype[size] (object is being created in heap memory) [run time] (DMA)
+
+Arrays are mutable

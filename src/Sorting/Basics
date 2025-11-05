@@ -1,0 +1,32 @@
+## Bubble Sort
+   *first pass -> largest element at its position (at last).
+   *after every step the elements are arranged to the last.
+   *Space Complexity -> O(1) // no extra space (constant)
+   *Time Complexity -> O(n) //best case
+                      O(n^2) //worst case
+   *Stable sorting algorithm (order must be same for equal values).
+
+## Selection Sort
+   *Select an element put it at its correct inex.
+   *Time Complexity -> O(n^2) // both best and worst
+   *Not stable
+   *It performs well on small list.
+
+## Insertion Sort
+   *for every index put that index element at the correct index of LHS.
+   *Time Complexity -> O(n^2) // worst case
+                       O(n) // best case
+   *Adaptive (steps gets reduced)
+   *number of swaps reduced as compared to bubble sort.
+   *Stable
+   *Used for similar values of N.
+   *works good when array is partially sorted.
+   *It takes part in hybrid sorting algorithm.
+   *Used in internal sorting algorithm.
+
+## Cyclic Sort
+   *When given numbers from 1 to N use cyclic sort.
+   *Time complexity -> O(n) // best and worst
+   *If range -> [0,n] - every element will be at index = value
+                [1,n] - every element will be at inex = value - 1
+   *Ques - 448, 41

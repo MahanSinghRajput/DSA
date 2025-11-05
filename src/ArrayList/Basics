@@ -1,0 +1,16 @@
+Size is fixed internally.
+Once the arraylist is filled to a specific portion a new arraylist of double the size is created automatically
+and the elements are copied to it. Time complexity for this is O(1)
+
+## methods
+   list.add(int val); //to add data in ArrayList
+   list.get(int index); //to get value at index
+   list.contains(int n); //gives true or false.
+   list.set(int index,int newValue); //changes the value at a particular index.
+   list.remove(int index); //removes the value at particular index.
+   list.get(int index); //prints the value at particular index.
+   list.size(); //gives size of the list
+   Collections.sort(list); // for sorting list
+
+Wrapper class na ho to kuch bhi add kar skte ho.
+ArrayList l = new ArrayList();
