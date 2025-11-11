@@ -64,10 +64,45 @@ public class BinaryTree {
         }
         prettyDisplay(node.left, level + 1);
     }
+
+    //preorder traversal
+    public void preorder(){
+        preorder(root);
+    }
+    private void preorder(Node node){
+        if(node == null) return;
+        System.out.println(node.value);
+        preorder(node.left);
+        preorder(node.right);
+    }
+
+    //inorder traversal
+    public void inorder(){
+        inorder(root);
+    }
+    private void inorder(Node node){
+        if(node == null) return;
+        inorder(node.left);
+        System.out.println(node.value);
+        inorder(node.right);
+    }
+
+    //postorder traversal
+    public void postorder(){
+        postorder(root);
+    }
+    private void postorder(Node node){
+        if(node == null) return;
+        postorder(node.left);
+        postorder(node.right);
+        System.out.println(node.value);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         BinaryTree tree = new BinaryTree();
         tree.populate(sc);
         tree.prettyDisplay();
     }
+
 }
