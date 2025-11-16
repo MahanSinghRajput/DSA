@@ -60,3 +60,17 @@ You can now place annotations in these places:
 5. On method return types
 6. On parameters and constructor references
 7. On array types
+
+##JSP
+JSP stands for JAVA Server Pages.
+It is a server side technology. It is used to create dynamic web content.
+In this JSP tags are used to insert JAVA code into HTML pages.
+No recompilation or redeployment is required.
+JSP has access to entire API of JAVA.
+JSP are extended version of servlet.
+
+##Servlets
+Servlets work on server side.
+Servlets are capable of handling complex requests obtained from the web server and able to process it and then able
+to provide the dynamic response accordingly.
+Servlets, as written in JAVA are platform independent.

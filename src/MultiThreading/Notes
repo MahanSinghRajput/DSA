@@ -1,0 +1,58 @@
+# Program - Set of instructions written in a programming language that tells the computer how to perform a specific task.
+
+# Process - It is an instance of a program that is being executed. When a program runs the OS creates a process to manage
+            its execution.
+
+# Threads - It is the smallest unit of execution within a process. A process can have multiple threads, which share the
+            same resources but can run independently.
+            Ex: A web browser can use multiple threads for different tabs, with each tab running as a simple thread.
+
+# Multitasking - It allows an OS to run multiple processes simultaneously. On single core CPUs this is done through time
+                 sharing, rapidly switching between tasks. On multi-core CPUs, true parallel execution occurs with tasks
+                 distributed across cores. The OS scheduler balances the load, ensuring efficient and responsive system
+                 performance.
+               - It utilizes the capability of the CPU and it cores. OS can assign different tasks to different cores.
+                 This is more efficient than assigning all tasks to a single core.
+
+# Multithreading - It refers to the ability to execute multiple threads within a single process concurrently.
+                   It enhances the efficiency of multitasking by breaking down individual tasks into smaller sub-tasks or
+                   threads. These threads can be processed simultaneously, making better use of the CPUs capabilities.
+                   In a single-core system:
+                        Both threads and processes are managed by the OS scheduler through time slicing and context
+                        switching to create the illusion of simultaneous execution.
+                   In a multi-core system:
+                        Both threads and processes can run in true parallel on different cores, with the OS scheduler
+                        distributing tasks across the cores to optimize performance.
+
+# Time Slicing - Definition: Time slicing divides CPU time into small intervals called time slices or quanta.
+                 Function: The OS scheduler allocates these time slices to different processes and threads, ensuring
+                           each gets a fair share of CPU time.
+                 Purpose: This prevents any single process or thread from monopolizing the CPU, improving responsiveness
+                          and enabling concurrent execution.
+
+# Context Switching - Definition: Context switching is the process of saving the state of a currently running process or
+                                  thread and loading the state of the next one to be executed.
+                      Function: When a process or thread's time slice expires, the OS scheduler performs a context switch
+                                to move the CPU's focus to another process or thread.
+                      Purpose: This allows multiple processes and threads to share the CPU, giving the appearance of
+                               simultaneous execution on a single-core CPU or improving parallelism on multi-core CPUs.
+
+-> Multitasking can be achieved through multithreading where each task is divided into threads that are managed concurrently.
+-> While multitasking typically refers to the running of multiple applications, multithreading is more granular dealing
+   with multiple threads within the same application or process.
+-> Multitasking operates at the level of processes, which are the operating system's primary units of execution.
+-> Multithreading operates at the level of threads, which are smaller units within a process.
+-> Multitasking allows us to run multiple applications simultaneously, improving productivity and system utilization.
+-> Multithreading allows a single application to perform multiple tasks at the same time, improving application
+   performance and responsiveness.
+
+** JAVA's multithreading is included in java.lang package, making it easy to implement concurrent execution.
+When a JAVA program starts one thread becomes running immediately which is called the main thread. This thread is
+responsible for executing the main method of a program.
+
+To create a new thread in JAVA you can either extend the Thread class or implement the Runnable interface.
+If you extend Thread class then override the run() function, and start() method is called to execute it.
+
+If you use runnable interface then override the function run()
+then you will need to create an object say obj of the class implementing runnable and then create an object of Thread
+by calling obj. Ex: Thread t1 = new Thread(obj); then t1.start();
