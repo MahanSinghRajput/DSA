@@ -16,3 +16,45 @@ public class TryWithResource {
         }
     }
 }
+/*
+
+try (ResourceType resource = new ResourceType()) {
+    // use the resource
+} catch (ExceptionType e) {
+    // handle exceptions
+}
+
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(new File("testRead.txt"));
+             PrintWriter writer = new PrintWriter(new File("testWrite.txt"))) {
+
+            while (scanner.hasNext()) {
+                writer.println(scanner.nextLine());
+            }
+            System.out.println("File copied successfully.");
+        } catch (IOException e) {
+            System.out.println("Error handling file: " + e.getMessage());
+        }
+    }
+}
+
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try (FileOutputStream output = new FileOutputStream("filename.txt")) {
+            output.write("Hello".getBytes());
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("Error writing file.");
+        }
+    }
+}
+
+ */

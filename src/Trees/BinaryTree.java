@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class BinaryTree {
     private Node root;
     public BinaryTree(){
-
     }
     private static class Node{
         int value;
@@ -55,13 +54,10 @@ public class BinaryTree {
     }
     private int diameter(Node node) {
         if(node == null) return 0;
-
         int leftHeight = height(node.left);
         int rightHeight = height(node.right);
-
         int leftDiameter = diameter(node.left);
         int rightDiameter = diameter(node.right);
-
         return Math.max(leftHeight + rightHeight + 1, Math.max(leftDiameter, rightDiameter));
     }
 
@@ -71,14 +67,10 @@ public class BinaryTree {
     }
     private Node lca(Node node, int n1, int n2) {
         if(node == null) return null;
-
         if(node.value == n1 || node.value == n2) return node;
-
         Node left = lca(node.left, n1, n2);
         Node right = lca(node.right, n1, n2);
-
         if(left != null && right != null) return node;
-
         return (left != null) ? left : right;
     }
 
