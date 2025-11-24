@@ -39,3 +39,12 @@
 
 ## Binary Search Tree
 It is a balanced tree.
+
+##Traversal Methods
+1. Preorder : root -> left -> right
+              used for evaluating maths expression or making a copy
+              serialisation from string/array
+2. Inorder : left -> root -> right
+             visits node in sorted manner
+3. Postorder : left -> right -> root
+               used to delete a binary tree

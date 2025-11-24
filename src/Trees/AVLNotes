@@ -1,0 +1,19 @@
+AVL (Adelson Velskii and Landis) tree is a self balancing binary tree.
+* For evey node in the tree, the difference in height of left and right subtree of that node is <= 1.
+
+## Steps to balance
+1. Insert normally Node n
+2. Start from Node n and find the node that makes the tree unbalanced, bottom up.
+3. Using one of the 4 rules, rotate.
+
+## 4 rules
+1. Left Left case
+            P                                                                       C
+           / \                                                                    /    \
+          C   t4                Right rotate (P)                                 G      P
+         / \                   ------------------------->                       / \    / \
+        G   t3                                                                 t1  t2 t3  t4
+       / \
+      t1  t2
+
+2. Left Right Case

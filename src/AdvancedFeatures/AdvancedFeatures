@@ -1,0 +1,76 @@
+## Functional Interface
+A Functional Interface in Java is an interface that contains exactly one abstract method. It can have multiple default or
+static methods, but only one abstract method.
+Functional Interfaces are the basis for lambda expressions and method references in Java, introduced in Java 8.
+Syntax:
+@FunctionalInterface
+public interface MyFunctionalInterface {
+    void performAction(); // Single abstract method
+}
+@FunctionalInterface annotation is optional but recommended — it tells the compiler to ensure the interface has only one
+abstract method.
+Why Use Functional Interfaces?
+ To write cleaner and concise code using lambda expressions.
+ To implement functional programming in Java.
+ To pass behavior as a parameter (functional-style programming).
+
+## Method Reference
+Method Reference is a shorthand notation of a lambda expression to call a method. It allows referencing an existing
+method by name instead of writing a full lambda.
+Introduced in Java 8, method references make code more readable and concise.
+Syntax:
+ClassName::methodName
+or
+object::methodName
+
+## Encode Decode
+Java provides built-in support for Base64 encoding and decoding through the java.util.Base64 class (introduced in Java 8).
+Types of Base64 Encoders/Decoders in Java
+Java provides 3 variants under Base64:
+1. Base64.getEncoder() : Basic Base64 encoding (single-line
+2. Base64.getUrlEncoder() : URL and Filename safe encoding
+3. Base64.getMimeEncoder() : MIME friendly encoding (with line breaks)
+
+
+## Try with resource
+Try-with-resources in Java is a feature introduced in Java 7 that helps automatically close resources
+such as files, sockets, database connections, etc., once they are no longer needed. This eliminates the need for writing
+explicit finally blocks to close these resources.
+Works with classes that implement the AutoCloseable interface (or Closeable, which extends AutoCloseable).
+Resources are closed automatically, regardless of whether the try block completes normally or abruptly.
+We don't need to use finally.
+Syntax:
+try (ResourceType resource = new ResourceType()) {
+// Use the resource
+} catch (Exception e) {
+    e.printStackTrace();
+}
+
+
+##Type Annotations
+Type annotations in Java were introduced with Java 8 (JSR 308) to allow annotations to be placed anywhere a type is used,
+not just on declarations. This makes annotations more powerful, especially for tools that analyze or verify code such as
+static analyzers, frameworks, or compilers.
+Where You Can Use Type Annotations
+You can now place annotations in these places:
+1. On variable declarations
+2. On generic type arguments
+3. On casts
+4. On implements and extends clauses
+5. On method return types
+6. On parameters and constructor references
+7. On array types
+
+##JSP
+JSP stands for JAVA Server Pages.
+It is a server side technology. It is used to create dynamic web content.
+In this JSP tags are used to insert JAVA code into HTML pages.
+No recompilation or redeployment is required.
+JSP has access to entire API of JAVA.
+JSP are extended version of servlet.
+
+##Servlets
+Servlets work on server side.
+Servlets are capable of handling complex requests obtained from the web server and able to process it and then able
+to provide the dynamic response accordingly.
+Servlets, as written in JAVA are platform independent.

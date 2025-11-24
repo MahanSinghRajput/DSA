@@ -1,0 +1,12 @@
+It is used to compress any file.
+It is a lossless algorithm.
+We use two hashmaps. One is encoder other is decoder.
+Steps :-
+1. Pass the String (data, aka feeder).
+2. Make frequency map.
+3. For every key in frequency map create a node and insert that node in a min heap/ PQ.
+   Node data : char data, int cost (frequency)
+4. Remove two elements from heap and combine them.
+No value in the heap is a prefix of the other.
+Space Complexity = O(n)
+Time Complexity = O(n log(n))
