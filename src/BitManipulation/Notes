@@ -1,0 +1,5 @@
+## Operators
+# AND : True if all true. False if a single is false.
+# OR : True if any one is true. False if all are false.
+# XOR : If no. of 1s is odd then 1
+        If no. of 1s is even then 0

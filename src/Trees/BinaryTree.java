@@ -1,5 +1,4 @@
 package Trees;
-
 import java.util.Scanner;
 
 public class BinaryTree {
@@ -139,5 +138,4 @@ public class BinaryTree {
         tree.populate(sc);
         tree.prettyDisplay();
     }
-
 }
