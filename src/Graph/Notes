@@ -1,0 +1,8 @@
+Types of graph - Directed, Undirected
+Cycle - Start from a node and end at that node.
+Path - Contain a lot of nodes and each of them are reachable.
+Degree - The total number of edges connected to a node whether going in or out.
+         Total degree of a graph = 2 * No of edges of the graph (Undirected)
+         Directed : Indegree - edges coming to a node
+                    Outdegree - edges going from a node
+Edge Weight - Every edge has a weight. default is 1
