@@ -1,0 +1,11 @@
+Locks are used when you use synchronized keyword. Lock is used by the thread accessing the shared resource to prevent it
+from getting accessed by other threads.
+
+Every object has its lock when we use "synchronized" then the object uses this lock.
+
+1. Intrinsic - These are built into every object in java. You don't see them, but they're there. When we use "synchronized"
+               keyword you're using these automatic locks.
+
+2. Explicit - These are more advanced locks you can control yourself using the Lock class from java.util.concurrent.locks
+              You explicitly say when to lock and unlock, giving you more control over how and when people can write in notebook.
+
