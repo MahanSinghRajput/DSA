@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class treeMap {
+public class  treeMap {
     public static void main(String[] args) {
         Map<String, Integer> mpp = new TreeMap<>(Comparator.reverseOrder());
         mpp.put("One", 1);
