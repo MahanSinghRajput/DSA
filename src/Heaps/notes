@@ -1,0 +1,7 @@
+* Heaps are complete binary tree.
+* Every node value >= all of its children.
+    Parent(i) = i/2
+    Left(i) = 2*i
+    Right(i) = 2*i + 1
+* No pointers required
+* Height = log(n)
